@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floria & Eterna🌼</title>
+  <link rel="shortcut icon" href="../properti/icon/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="baby.css">
+</head>
+<body>
+
+  <header>
+    <div class="hamburger" onclick="toggleSidebar()">☰</div>
+    <nav>
+      <a href="../home page/index.html#welcome">Tentang Kami</a>
+      <a href="../home page/index.html#product">Produk</a>
+    </nav>
+    <div class="logo">
+      <img src="../properti/icon/logo.png" alt="logo">
+    </div>
+    <nav>
+      <a href="../home page/index.html#message">Pesan</a>
+      <a href="../home page/index.html#contact">Kontak</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Cari...">
+    </div>
+  </header>
+
+  <div class="main">
+    <aside class="sidebar">
+      
+      <div class="see-all-container">
+        <button id="see-all-btn">🌼 Lihat Semua Produk 🌼</button>
+      </div>
+
+      <div class="sidebar-dropdown pastel">
+        <input type="checkbox" id="size" class="dropdown-checkbox" hidden>
+        <label for="size" class="dropdown-label">
+          Ukuran <span class="dropdown-arrow"></span>
+        </label>
+        <div class="dropdown-content">
+          <label><input type="radio" name="size" value="Small"> Kecil</label>
+          <label><input type="radio" name="size" value="Medium"> Sedang</label>
+          <label><input type="radio" name="size" value="Large"> Besar</label>
+        </div>
+      </div>
+
+      <div class="sidebar-dropdown pastel">
+        <input type="checkbox" id="harga" class="dropdown-checkbox" hidden>
+        <label for="harga" class="dropdown-label">
+          Harga <span class="dropdown-arrow"></span>
+        </label>
+        <div class="dropdown-content">
+          <label><input type="radio" name="harga" value="50-100"> Rp 50.000 - Rp 100.000</label>
+          <label><input type="radio" name="harga" value="105-150"> Rp 105.000 - Rp 150.000</label>
+          <label><input type="radio" name="harga" value="155+"> Rp 155.000 ke atas</label>
+        </div>
+      </div>
+
+      <div class="sidebar-dropdown pastel">
+        <input type="checkbox" id="wrapcolor" class="dropdown-checkbox" hidden>
+      </div>
+
+      <div class="cart-section">
+        <h3>Keranjang 🛒</h3>
+        <div id="cart-items"></div>
+        <div class="cart-summary">
+          <strong>Total:</strong>
+          <strong id="cart-total">Rp 0</strong>
+        </div>
+        <button id="checkout-btn" disabled>Selesaikan Pesanan</button>
+        <button id="clear-cart-btn" disabled>Kosongkan Keranjang</button>
+      </div>
+    </aside>
+
+    <section class="products">
+      <div class="product custom" data-name="bunga custom"data-size="Custom" data-price="5000">
+        <img src="../properti/custom/custom buket bayi.png" alt="custom bouquet">
+        <h4>Buket Pilihan Hatimu</h4>
+        <p class="price">Mulai Rp 5.000</p>
+      </div>
+      <div class="product" data-size="Small" data-name="buket bayi" data-price="75000">
+        <img src="../properti/buket bunga/bayi small 1.png" alt="buket bayi">
+        <h4>Buket Balon Bayi Pink</h4>
+        <p class="price">Rp 75.000</p>
+        <button class="btn-cart">+ Keranjang</button>
+      </div>
+      <div class="product" data-size="Small" data-name="buket bayi" data-price="65000">
+        <img src="../properti/buket bunga/bayi small 2.png" alt="buket bayi">
+        <h4>Buket Boneka Bayi Manis</h4>
+        <p class="price">Rp 65.000</p>
+        <button class="btn-cart">+ Keranjang</button>
+      </div>
+      <div class="product" data-size="Small" data-name="buket bayi" data-price="100000">
+        <img src="../properti/buket bunga/bayi small 7.png" alt="buket bayi">
+        <h4>Hampers Bayi Elegan</h4>
+        <p class="price">Rp 100.000</p>
+        <button class="btn-cart">+ Keranjang</button>
+      </div>
+      <div class="product" data-size="Medium" data-name="buket bayi" data-price="120000">
+        <img src="../properti/buket bunga/bayi small 8.png" alt="buket bayi">
+        <h4>Hampers Bayi Ceria</h4>
+        <p class="price">Rp 120.000</p>
+        <button class="btn-cart">+ Keranjang</button>
+      </div>
+      <div class="product" data-size="Large" data-name="buket bayi" data-price="160000">
+        <img src="../properti/buket bunga/bayi small 10.png" alt="buket bayi">
+        <h4>Hampers Bayi Gajah Imut</h4>
+        <p class="price">Rp 160.000</p>
+        <button class="btn-cart">+ Keranjang</button>
+      </div>
+      <div class="product" data-size="Small" data-name="buket bayi" data-price="50000">
+        <img src="../properti/buket bunga/bayi small 11.png" alt="buket bayi">
+        <h4>Buket Mawar Baby Pink</h4>
+        <p class="price">Rp 50.000</p>
+        <button class="btn-cart">+ Keranjang</button>
+      </div>
+      <div class="product" data-size="Large" data-name="buket bayi" data-price="155000">
+        <img src="../properti/buket bunga/bayi medium 1.png" alt="buket bayi">
+        <h4>Balon Newborn Pink</h4>
+        <p class="price">Rp 155.000</p>
+        <button class="btn-cart">+ Keranjang</button>
+      </div>
+      <div class="product" data-size="medium" data-name="buket bayi" data-price="140000">
+        <img src="../properti/buket bunga/bayi medium 3.png" alt="buket bayi">
+        <h4>Hampers Bayi Peach</h4>
+        <p class="price">Rp 140.000</p>
+        <button class="btn-cart">+ Keranjang</button>
+      </div>
+      <div class="product" data-size="Large" data-name="buket bayi" data-price="155000">
+        <img src="../properti/buket bunga/bayi medium 5.png" alt="buket bayi">
+        <h4>Buket Hadiah Baby Blue</h4>
+        <p class="price">Rp 155.000</p>
+        <button class="btn-cart">+ Keranjang</button>
+      </div>
+      <div class="product" data-size="Small" data-name="buket bayi" data-price="70000">
+        <img src="../properti/buket bunga/bayi medium 6.png" alt="buket bayi">
+        <h4>Hampers Bayi Biru Teddy</h4>
+        <p class="price">Rp 70.000</p>
+        <button class="btn-cart">+ Keranjang</button>
+      </div>
+      <div class="product" data-size="Large" data-name="buket bayi" data-price="200000">
+        <img src="../properti/buket bunga/bayi medium 10.png" alt="buket bayi">
+        <h4>Buket Bayi Mawar Pink</h4>
+        <p class="price">Rp 200.000</p>
+        <button class="btn-cart">+ Keranjang</button>
+      </div>
+      <div class="product" data-size="Large" data-name="buket bayi" data-price="195000">
+        <img src="../properti/buket bunga/bayi medium 15.png" alt="buket bayi">
+        <h4>Hampers Bayi Premium</h4>
+        <p class="price">Rp 195.000</p>
+        <button class="btn-cart">+ Keranjang</button>
+      </div>
+    </section>
+  </div>
+
+  <section id="custom-section" style="display:none; margin-top:40px;">
+    <div class="product-page">
+      <div class="product-image">
+        <img src="../properti/custom/baby born 22.png" id="custom-preview" alt="Custom Bouquet">
+      </div>
+      <div class="product-details">
+        <h2>Buket Pilihan Hatimu</h2>
+        <div class="product-price" id="price">Rp 5.000</div>
+        <p>Pilih Perlengkapan Bayi Favoritmu, Lalu Tentukan Jumlah Item (Minimal 1, Maksimal 20).</p>
+
+        <h4>Pilih Perlengkapan:</h4>
+        <div class="variant-list">
+          <label><input type="checkbox" name="flowers" value="Baby Bodysuit" checked><span>Baby Bodysuit</span></label>
+          <label><input type="checkbox" name="flowers" value="Baju Tidur Bunga"><span>Baju Tidur Bunga</span></label>
+          <label><input type="checkbox" name="flowers" value="Bodysuit Bunga"><span>Bodysuit Bunga</span></label>
+          <label><input type="checkbox" name="flowers" value="Bodysuit Awan"><span>Bodysuit Awan</span></label>
+          <label><input type="checkbox" name="flowers" value="Jumpsuit Bayi"><span>Jumpsuit Bayi</span></label>
+          <label><input type="checkbox" name="flowers" value="Kaos Kaki Pink"><span>Kaos Kaki Pink</span></label>
+          <label><input type="checkbox" name="flowers" value="Kaos Kaki"><span>Kaos Kaki</span></label>
+          <label><input type="checkbox" name="flowers" value="Kaos Kaki Mix"><span>Kaos Kaki Mix</span></label>
+          <label><input type="checkbox" name="flowers" value="Sarung Tangan 1"><span>Sarung Tangan 1</span></label>
+          <label><input type="checkbox" name="flowers" value="Sarung Tangan 2"><span>Sarung Tangan 2</span></label>
+          <label><input type="checkbox" name="flowers" value="Pita Putih"><span>Pita Putih</span></label>
+          <label><input type="checkbox" name="flowers" value="Pita Pink"><span>Pita Pink</span></label>
+          <label><input type="checkbox" name="flowers" value="Keranjang Coklat"><span>Keranjang Coklat</span></label>
+          <label><input type="checkbox" name="flowers" value="Keranjang Putih"><span>Keranjang Putih</span></label>
+        </div>
+
+        <h4>Jumlah:</h4>
+        <div class="quantity-controls">
+          <button type="button" id="decrease">-</button>
+          <input type="number" id="flower-qty" value="1" min="1" max="20" readonly>
+          <button type="button" id="increase">+</button>
+        </div>
+
+        <div class="subtotal">Total Sementara: <span id="subtotal">Rp 5.000</span></div>
+
+        <div class="actions">
+          <button class="btn-cart-custom">+ Keranjang</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="checkout-section" style="display:none; margin-top:60px;">
+    <div class="checkout-container">
+      <h1 class="checkout-title">Selesaikan Pesanan</h1>
+      <form class="checkout-form">
+        <h3>Informasi Pribadi</h3>
+        <div class="form-row">
+          <input type="text" placeholder="Nama" required>
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Nomor Telepon" required>
+        </div>
+
+        <h3>Detail Pengiriman</h3>
+        <div class="form-row">
+          <input type="text" placeholder="Alamat" required>
+          <input type="text" placeholder="Kota" required>
+        </div>
+
+        <h3>Metode Pengiriman</h3>
+        <div class="form-row radio-row">
+          <label><input type="radio" name="shipping" checked> Standard Shipping</label>
+          <label><input type="radio" name="shipping"> Pick Up</label>
+        </div>
+
+        <h3>Metode Pembayaran</h3>
+        <div class="form-row radio-row">
+          <label><input type="radio" name="payment" checked> Qris</label>
+          <label><input type="radio" name="payment"> Uang Tunai</label>
+        </div>
+
+        <div class="checkout-summary">
+          <h3>Rincian Pesanan</h3>
+          <div id="order-items"></div>
+          <div class="summary-line"><span>Total Sementara</span><span id="summary-subtotal">Rp 0</span></div>
+          <div class="summary-line total"><span>Total Keseluruhan</span><span id="summary-total">Rp 0</span></div>
+        </div>
+
+        <button type="submit" class="btn-place-order">Lakukan Pembayaran & Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo-footer">
+          <img src="../properti/icon/logo.png" alt="logo">
+        </div>
+        <div>
+          <h2>Floria & Eterna🌼</h2>
+          <p>Pesona Bunga Yang Tetap Mekar & Keindahan Sejati yang Tak Berakhir.</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Informasi</h4>
+        <ul>
+          <li><a href="#welcome">Tentang Kami</a></li>
+          <li><a href="#product">Produk</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="baby.js"></script>
+</body>
+</html>
